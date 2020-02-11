@@ -9,7 +9,7 @@ namespace RPSLS
     public abstract class PlayerGesture
     {
 
-
+        public string name;
         List<string> gestures;
 
         public PlayerGesture()
@@ -23,7 +23,6 @@ namespace RPSLS
             gestures.Add("Rock");
             gestures.Add("Lizard");
             gestures.Add("Spock");
-
 
         }
 

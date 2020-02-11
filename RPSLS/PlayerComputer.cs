@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace RPSLS
 {
-    class PlayerComputer
+    public class PlayerComputer : PlayerGesture 
     {
+        public PlayerComputer(string name)
+        {
+            this.name = "Computer";
+        }
     }
 }

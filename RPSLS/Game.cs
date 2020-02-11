@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace RPSLS
 {
-    class Game
+    public class Game : PlayerGesture 
     {
+        public void Player1Turn()
+        {
+         
+        }
+
     }
 }
