@@ -9,10 +9,12 @@ namespace RPSLS
     class Program
     {
         static void Main(string[] args)
-        {
-         Game new game
-         RunGame 
-        // Run Game is at the end of Game class calling out methods
+        { 
+            Game game = new Game();
+            game.RunGame();
+
+
+            // Run Game is at the end of Game class calling out methods
         }
     }
 }

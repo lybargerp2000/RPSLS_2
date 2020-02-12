@@ -18,6 +18,7 @@ namespace RPSLS
             Console.WriteLine("Choose a Gesture of Scissors, Paper, Rock, Lizard, or Spock");
 
             gesturechoosen = Console.ReadLine();
+            return;
 
         }
     }

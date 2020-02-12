@@ -8,6 +8,8 @@ namespace RPSLS
 {
     public class Game
     {
+       
+
         public string player1;
         public string player2;
         //PlayerHuman playerHuman;
@@ -17,6 +19,7 @@ namespace RPSLS
         //    playerHuman = new PlayerHuman();
         //    playerComputer = new PlayerComputer();
         //}
+    
         public void Player1Turn()
         {
          
@@ -53,14 +56,15 @@ namespace RPSLS
             new PlayerHuman();
             return PlayerHuman();
         }
-
+        // Method RunGame occurs within class when called out by program class "new game".
         public void RunGame()
         {
             string players = GetNumberOfPlayers();
             SetPlayers(players);
-            //player1.ChooseGesture();
             PlayerComputer();
             PlayerHuman();
+           
+
 
         }
 
