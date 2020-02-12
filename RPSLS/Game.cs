@@ -10,13 +10,13 @@ namespace RPSLS
     {
         public string player1;
         public string player2;
-        PlayerHuman playerHuman;
-        PlayerComputer playerComputer;
-        public Game() 
-        {
-            playerHuman = new PlayerHuman();
-            playerComputer = new PlayerComputer();
-        }
+        //PlayerHuman playerHuman;
+        //PlayerComputer playerComputer;
+        //public Game()
+        //{
+        //    playerHuman = new PlayerHuman();
+        //    playerComputer = new PlayerComputer();
+        //}
         public void Player1Turn()
         {
          
@@ -31,21 +31,36 @@ namespace RPSLS
         {
          if(numberPlayers == "1")
             {
-                player1 = new playerHuman;
-                player2 = new playerComputer; 
+                player1 = PlayerHuman();
+                player2 = PlayerComputer();
             }
           if(numberPlayers == "2")
             {
-                player1 = playerHuman;
+                player1 = PlayerHuman();
                 player2 = PlayerHuman();
              
             }
         }
+
+        private string PlayerComputer()
+        {
+            new PlayerComputer();
+            return PlayerComputer();
+        }
+
+        private string PlayerHuman()
+        {
+            new PlayerHuman();
+            return PlayerHuman();
+        }
+
         public void RunGame()
         {
             string players = GetNumberOfPlayers();
             SetPlayers(players);
-            player1.ChooseGesture();
+            //player1.ChooseGesture();
+            PlayerComputer();
+            PlayerHuman();
 
         }
 

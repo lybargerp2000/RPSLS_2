@@ -8,11 +8,11 @@ namespace RPSLS
 {
     public class PlayerHuman : Player 
     {
-        public PlayerHuman(string name)
-        {
-            this.name = "PlayerFlesh";
+        //public PlayerHuman(string name)
+        //{
+           // this.name = "PlayerFlesh";
 
-        }
+        //}
 
         public override void ChooseGesture()
         {

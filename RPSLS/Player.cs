@@ -9,7 +9,7 @@ namespace RPSLS
     public abstract class Player
     {
 
-        public string name;
+        //public string name;
         List<string> gestures;
         public string gesturechoosen;
 

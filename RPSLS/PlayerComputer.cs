@@ -8,10 +8,10 @@ namespace RPSLS
 {
     public class PlayerComputer : Player 
     {
-        public PlayerComputer(string name)
-        {
-            this.name = "Computer";
-        }
+        //public PlayerComputer(string name)
+        //{
+           // this.name = "Computer";
+        //}
 
         public override void ChooseGesture()
         {
