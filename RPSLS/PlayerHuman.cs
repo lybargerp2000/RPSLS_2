@@ -6,13 +6,20 @@ using System.Threading.Tasks;
 
 namespace RPSLS
 {
-    public class PlayerHuman : PlayerGesture 
+    public class PlayerHuman : Player 
     {
-     public PlayerHuman(string name)
+        public PlayerHuman(string name)
         {
-            this.name = "player1";
-            this.name = "player2";
-           
+            this.name = "PlayerFlesh";
+
+        }
+
+        public override void ChooseGesture()
+        {
+            Console.WriteLine("Choose a Gesture of Scissors, Paper, Rock, Lizard, or Spock");
+
+            gesturechoosen = Console.ReadLine(); 
+
         }
 
 

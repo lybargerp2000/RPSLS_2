@@ -6,17 +6,18 @@ using System.Threading.Tasks;
 
 namespace RPSLS
 {
-    public abstract class PlayerGesture
+    public abstract class Player
     {
 
         public string name;
         List<string> gestures;
+        public string gesturechoosen;
 
-        public PlayerGesture()
+        public Player()
         {
             gestures = new List<string>();
         }
-        public void AddToListOfGestures()
+        public void ListOfGestures()
         {
             gestures.Add("Scissors");
             gestures.Add("Paper");
@@ -25,6 +26,11 @@ namespace RPSLS
             gestures.Add("Spock");
 
         }
+        //Has to do this frocing players to choose fale safe
+        public abstract void ChooseGesture();
+        
+         
+       
 
     }
 }
