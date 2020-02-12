@@ -10,16 +10,17 @@ namespace RPSLS
     {
        
 
-        public string player1;
-        public string player2;
-        //PlayerHuman playerHuman;
-        //PlayerComputer playerComputer;
-        //public Game()
-        //{
-        //    playerHuman = new PlayerHuman();
-        //    playerComputer = new PlayerComputer();
-        //}
-    
+        Player player1;
+        Player player2;
+        PlayerHuman playerHuman;
+        PlayerComputer playerComputer;
+        public Game()
+        {
+            playerHuman = new PlayerHuman();
+            playerComputer = new PlayerComputer();
+        }
+       
+
         public void Player1Turn()
         {
          
@@ -32,40 +33,25 @@ namespace RPSLS
         }
         public void SetPlayers(string numberPlayers)
         {
-         if(numberPlayers == "1")
+            if (numberPlayers == "1")
             {
-                player1 = PlayerHuman();
-                player2 = PlayerComputer();
+                player1 = playerHuman;
+                player2 = playerComputer;
             }
-          if(numberPlayers == "2")
+            if (numberPlayers == "2")
             {
-                player1 = PlayerHuman();
-                player2 = PlayerHuman();
-             
+                player1 = playerHuman;
+                player2 = playerHuman;
+
             }
         }
-
-        private string PlayerComputer()
-        {
-            new PlayerComputer();
-            return PlayerComputer();
-        }
-
-        private string PlayerHuman()
-        {
-            new PlayerHuman();
-            return PlayerHuman();
-        }
+        
         // Method RunGame occurs within class when called out by program class "new game".
         public void RunGame()
         {
             string players = GetNumberOfPlayers();
             SetPlayers(players);
-            PlayerComputer();
-            PlayerHuman();
-           
-
-
+        
         }
 
     }

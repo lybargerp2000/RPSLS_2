@@ -10,6 +10,7 @@ namespace RPSLS
     {
 
         //public string name;
+
         List<string> gestures;
         public string gesturechoosen;
 
@@ -17,7 +18,7 @@ namespace RPSLS
         {
             gestures = new List<string>();
         }
-        public void ListOfGestures()
+        public void AddGesture(List <string> gestures)
         {
             gestures.Add("Scissors");
             gestures.Add("Paper");
