@@ -10,14 +10,19 @@ namespace RPSLS
     {
         //public PlayerComputer(string name)
         //{
-           // this.name = "Computer";
+        // this.name = "Computer";
         //}
+        public PlayerComputer()
+        {
+            AddGesture();
+        }
+        
 
         public override void ChooseGesture()
         {
             Console.WriteLine("Choose a Gesture of Scissors, Paper, Rock, Lizard, or Spock");
 
-            gesturechoosen = Console.ReadLine();
+            gestureChoosen = Console.ReadLine();
             return;
 
         }

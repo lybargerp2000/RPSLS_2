@@ -13,7 +13,10 @@ namespace RPSLS
         // this.name = "PlayerFlesh";
 
         //}
-        string gestureChoosen;
+        public PlayerHuman()
+        {
+            AddGesture();
+        }
 
         public override void ChooseGesture()
         {
