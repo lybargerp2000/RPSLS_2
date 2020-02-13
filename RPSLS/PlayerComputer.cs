@@ -25,7 +25,7 @@ namespace RPSLS
             int val  = ComputerChoice.Next(0, 5);
             gestureChoosen = gestures[val];
 
-            gestureChoosen = Console.ReadLine();
+            return;
           
         }
     }
