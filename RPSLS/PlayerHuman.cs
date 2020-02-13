@@ -10,15 +10,16 @@ namespace RPSLS
     {
         //public PlayerHuman(string name)
         //{
-           // this.name = "PlayerFlesh";
+        // this.name = "PlayerFlesh";
 
         //}
+        string gestureChoosen;
 
         public override void ChooseGesture()
         {
             Console.WriteLine("Choose a Gesture of Scissors, Paper, Rock, Lizard, or Spock");
 
-            gesturechoosen = Console.ReadLine();
+            gestureChoosen = Console.ReadLine();
             return; 
 
         }

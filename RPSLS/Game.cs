@@ -14,16 +14,31 @@ namespace RPSLS
         Player player2;
         PlayerHuman playerHuman;
         PlayerComputer playerComputer;
+        string gestureChoosen;
+        int Player1Score;
+        int Player2Score;
+        string Scissors;
+
+        
+        
+        
+        
         public Game()
         {
             playerHuman = new PlayerHuman();
             playerComputer = new PlayerComputer();
         }
-       
 
+       
         public void Player1Turn()
         {
-         
+            player1.ChooseGesture();
+            Console.ReadLine();
+        }
+        public void Player2Turn()
+        {
+            player2.ChooseGesture();
+            Console.ReadLine();
         }
         public string GetNumberOfPlayers()
         {
@@ -45,12 +60,25 @@ namespace RPSLS
 
             }
         }
+        public void CompareGestures(string player1Shoot, string player2Shoot)
+        {
+            
+            Console.WriteLine(player1Shoot);
+            Console.WriteLine(player2Shoot);
+
+
+            if(player1 Console.ReadLine(Scissors)) 
+            {
+                
+            }
+        }
         
         // Method RunGame occurs within class when called out by program class "new game".
         public void RunGame()
         {
             string players = GetNumberOfPlayers();
             SetPlayers(players);
+            string gestures = ChooseGesture(); 
         
         }
 

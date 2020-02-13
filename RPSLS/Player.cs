@@ -11,12 +11,13 @@ namespace RPSLS
 
         //public string name;
 
-        List<string> gestures;
-        public string gesturechoosen;
+        public List<string> gestures;
+        public string gestureChoosen;
 
         public Player()
         {
             gestures = new List<string>();
+            return;
         }
         public void AddGesture(List <string> gestures)
         {
