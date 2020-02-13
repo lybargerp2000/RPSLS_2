@@ -12,19 +12,21 @@ namespace RPSLS
         //{
         // this.name = "Computer";
         //}
+        Random ComputerChoice = new Random();
         public PlayerComputer()
         {
             AddGesture();
+
         }
         
 
         public override void ChooseGesture()
         {
-            Console.WriteLine("Choose a Gesture of Scissors, Paper, Rock, Lizard, or Spock");
+            int val  = ComputerChoice.Next(0, 5);
+            gestureChoosen = gestures[val];
 
             gestureChoosen = Console.ReadLine();
-            return;
-
+          
         }
     }
 }

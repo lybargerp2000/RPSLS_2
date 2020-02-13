@@ -15,9 +15,10 @@ namespace RPSLS
         PlayerHuman playerHuman;
         PlayerComputer playerComputer;
         //string gestureChoosen;
-        int Player1Score;
-        int Player2Score;
+        int player1Score;
+        int player2Score;
         string Scissors;
+        Player PlayersChoice;
 
         
         
@@ -27,10 +28,13 @@ namespace RPSLS
         {
             playerHuman = new PlayerHuman();
             playerComputer = new PlayerComputer();
+            player1Score = 0;
+            player2Score = 0;
+
         }
 
        
-        public void Player1Turn()
+        public void PlayerTurn()
         {
             player1.ChooseGesture();
 
@@ -60,9 +64,17 @@ namespace RPSLS
         public void CompareGestures()
         {
 
-            if (Player1Turn 
+            if (player1.gestureChoosen == "Scissors" && player2.gestureChoosen == "Paper")
             {
-                
+                player1Score++;  
+            }
+            else if (player1.gestureChoosen == "Paper" && player2.gestureChoosen == "Rock")
+            {
+                player2Score++;
+            }
+            else if (player1.gestureChoosen == "Rock" && player2.gestureChoosen == "Lizard")
+            {
+                player1Score++;
             }
         }
         
@@ -71,8 +83,8 @@ namespace RPSLS
         {
             string players = GetNumberOfPlayers();
             SetPlayers(players);
-            Player1Turn();
-            Player2Turn();
+            PlayerTurn();
+
         
         }
 
