@@ -70,11 +70,71 @@ namespace RPSLS
             }
             else if (player1.gestureChoosen == "Paper" && player2.gestureChoosen == "Rock")
             {
-                player2Score++;
+                player1Score++;
             }
             else if (player1.gestureChoosen == "Rock" && player2.gestureChoosen == "Lizard")
             {
                 player1Score++;
+            }
+            else if (player1.gestureChoosen == "Lizard" && player2.gestureChoosen == "Spock")
+            {
+                player1Score++;
+            }
+            else if (player1.gestureChoosen == "Spock" && player2.gestureChoosen == "Scissors")
+            {
+                player1Score++;
+            }
+            else if (player1.gestureChoosen == "Scissors" && player2.gestureChoosen == "Lizard")
+            {
+                player1Score++;
+            }
+            else if (player1.gestureChoosen == "Lizard" && player2.gestureChoosen == "Paper")
+            {
+                player1Score++;
+            }
+            else if (player1.gestureChoosen == "Paper" && player2.gestureChoosen == "Spock")
+            {
+                player1Score++;
+            }
+            else if (player1.gestureChoosen == "Spock" && player2.gestureChoosen == "Rock")
+            {
+                player1Score++;
+            }
+            else if (player2.gestureChoosen == "Scissors" && player1.gestureChoosen == "Paper")
+            {
+                player2Score++;
+            }
+            else if (player2.gestureChoosen == "Paper" && player1.gestureChoosen == "Rock")
+            {
+                player2Score++;
+            }
+            else if (player2.gestureChoosen == "Rock" && player1.gestureChoosen == "Lizard")
+            {
+                player2Score++;
+            }
+            else if (player2.gestureChoosen == "Lizard" && player1.gestureChoosen == "Spock")
+            {
+                player2Score++;
+            }
+            else if (player2.gestureChoosen == "Spock" && player1.gestureChoosen == "Scissors")
+            {
+                player2Score++;
+            }
+            else if (player2.gestureChoosen == "Scissors" && player1.gestureChoosen == "Lizard")
+            {
+                player2Score++;
+            }
+            else if (player2.gestureChoosen == "Lizard" && player1.gestureChoosen == "Paper")
+            {
+                player2Score++;
+            }
+            else if (player2.gestureChoosen == "Paper" && player1.gestureChoosen == "Spock")
+            {
+                player2Score++;
+            }
+            else if (player2.gestureChoosen == "Spock" && player1.gestureChoosen == "Rock")
+            {
+                player2Score++;
             }
         }
         
@@ -84,6 +144,7 @@ namespace RPSLS
             string players = GetNumberOfPlayers();
             SetPlayers(players);
             PlayerTurn();
+            CompareGestures();
 
         
         }
